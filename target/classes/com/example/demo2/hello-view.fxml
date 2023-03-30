@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="borderpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="704.0" prefWidth="1171.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo2.HelloController">
+   <left>
+      <Pane prefHeight="704.0" prefWidth="375.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="option1" layoutX="268.0" layoutY="316.0" mnemonicParsing="false" onAction="#option1Clicked" prefHeight="48.0" prefWidth="66.0" text="Option 1" />
+            <Label layoutX="72.0" layoutY="48.0" prefHeight="25.0" prefWidth="63.0" text="Player 1">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="66.0" layoutY="185.0" prefHeight="25.0" prefWidth="63.0" text="Player 2">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <ProgressIndicator fx:id="P1ProgressIndicator" layoutX="84.0" layoutY="73.0" progress="0.0" />
+            <ProgressBar fx:id="P1ProgressBar" layoutX="32.0" layoutY="113.0" prefHeight="31.0" prefWidth="137.0" progress="0.0" />
+            <ProgressIndicator layoutX="84.0" layoutY="210.0" progress="0.0" />
+            <ProgressBar layoutX="29.0" layoutY="254.0" prefHeight="31.0" prefWidth="137.0" progress="0.0" />
+            <ProgressBar layoutX="29.0" layoutY="392.0" prefHeight="31.0" prefWidth="137.0" progress="0.0" />
+            <Label layoutX="69.0" layoutY="327.0" prefHeight="25.0" prefWidth="63.0" text="Player 3">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <ProgressIndicator layoutX="84.0" layoutY="352.0" progress="0.0" />
+            <ProgressIndicator layoutX="84.0" layoutY="512.0" progress="0.0" />
+            <Label layoutX="69.0" layoutY="487.0" prefHeight="25.0" prefWidth="63.0" text="Player 4">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <ProgressBar layoutX="29.0" layoutY="552.0" prefHeight="31.0" prefWidth="137.0" progress="0.0" />
+            <Separator layoutX="351.0" layoutY="5.0" orientation="VERTICAL" prefHeight="686.0" prefWidth="20.0" />
+            <CheckBox fx:id="P1CheckBox" layoutX="135.0" layoutY="52.0" mnemonicParsing="false" text="Check to play" />
+            <CheckBox layoutX="135.0" layoutY="331.0" mnemonicParsing="false" text="Check to play" />
+            <CheckBox layoutX="135.0" layoutY="189.0" mnemonicParsing="false" text="Check to play" />
+            <CheckBox layoutX="135.0" layoutY="491.0" mnemonicParsing="false" text="Check to play" />
+         </children>
+      </Pane>
+   </left>
+   <center>
+      <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: grey;" BorderPane.alignment="CENTER">
+         <children>
+            <Button layoutX="141.0" layoutY="525.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="28.0" text="D" />
+            <Button layoutX="141.0" layoutY="469.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="28.0" text="C" />
+            <Button layoutX="141.0" layoutY="418.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="28.0" text="B" />
+            <Button fx:id="Abutton" layoutX="141.0" layoutY="360.0" mnemonicParsing="false" onAction="#AbuttonClicked" prefHeight="25.0" prefWidth="28.0" text="A" />
+            <Label layoutX="130.0" layoutY="103.0" prefHeight="116.0" prefWidth="414.0" text="QUESTION HERE:">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="201.0" layoutY="315.0" prefHeight="116.0" prefWidth="414.0" text="ANSWERS HERE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </center>
+</BorderPane>
