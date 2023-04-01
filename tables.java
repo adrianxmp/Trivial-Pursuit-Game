@@ -25,7 +25,7 @@ class Tables{
                             ,{"Suppose Alice takes a random  iPhone 7. The iPhone is locked and requires a fingerprint ID to unlock. Alice somehow manages to unlock the phone with her fingerprint when she shouldn’t have. This is an example of: ","a"}
                             ,{"",""}
                             ,{"",""}};
-        //arrays with question number and option
+        //arrays with question number and option. Will need to filter by question number to get question answers
         String[][] AuthAs = {{"1","a.What is privacy?"},{"1","b.What is security?"},{"1","c.What is authentication?"},{"1","d.What are networks?"}
                             ,{"2","a.Something you are"},{"2","b.Something you cherish"},{"2","c.Both a and b"},{"2","d.None of the above"}
                             ,{"3","a.Iris Scan"},{"3","b.Finger prints"},{"3","c.Facial recognition"},{"3","d.Handwriting"}
