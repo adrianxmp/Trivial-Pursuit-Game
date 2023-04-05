@@ -3,18 +3,26 @@ import java.util.*;
 class Main {
 
     public static Scanner scanner = new Scanner(System.in);
-    public static HashMap<String, String[][]> topics = new HashMap<>();
+    public static HashMap<String, String[][]> questions = new HashMap<>();
+    public static HashMap<String, String[][]> answers = new HashMap<>();
 
     public static Random random = new Random();
     public static void main(String[] args) {
         Tables myTable = new Tables();
 
-        topics.put("Authentication", myTable.AuthQs);
-        topics.put("Privacy", myTable.PrivQs);
-        topics.put("Confidentiality", myTable.ConfQs);
-        topics.put("Passwords", myTable.PassQs);
-        topics.put("Network", myTable.NetwQs);
-        topics.put("Security", myTable.SecuQs);
+        questions.put("Authentication", myTable.AuthQs);
+        questions.put("Privacy", myTable.PrivQs);
+        questions.put("Confidentiality", myTable.ConfQs);
+        questions.put("Passwords", myTable.PassQs);
+        questions.put("Network", myTable.NetwQs);
+        questions.put("Security", myTable.SecuQs);
+
+        answers.put("Authentication", myTable.AuthAs);
+        answers.put("Privacy", myTable.PrivAs);
+        answers.put("Confidentiality", myTable.ConfAs);
+        answers.put("Passwords", myTable.PassAs);
+        answers.put("Network", myTable.NetwAs);
+        answers.put("Security", myTable.SecuAs);
 
 //        System.out.println(myTable.AuthAs[2][1]);
 //        System.out.println(myTable.AuthQs[2][0]);
@@ -57,24 +65,37 @@ class Main {
     }
 
     public static void playGame(String topic){
-        String[][] myQuestions = topics.get(topic);
+        String[][] myQuestions = questions.get(topic);
+        String[][] myAnswers = answers.get(topic);
 
         // Get random question from array
         int qNum = random.nextInt(myQuestions.length);
-        System.out.println(myQuestions[qNum][0]);
+//        System.out.println(myQuestions[qNum][0]);
 
+        System.out.println(getQuestion(myQuestions, qNum));
 
+//         Loop through each row
+        for (int i = 1; i < myAnswers.length;i++) {
+            // Loop through each element in the current row
 
-        // Loop through each row
-//        for (String[] myQuestion : myQuestions) {
-//            // Loop through each element in the current row
-//            if(input("Show question: (y/n)").equals("y")) {
-//                System.out.println(myQuestion[0]);
-//            }
-//        }
+            System.out.println(myAnswers[qNum][i]);
+        }
+        if(input("\nYour answer: (a/b/c/d) ").equals(getAnswer(myQuestions, qNum))){
+            System.out.println("You are correct!!");
+        } else {
+            System.out.println("!!!!!!!!!!!! ERRRRRR WRONG !!!!!!!!!!!!! :(((((");
+        }
 
         System.out.println();
 
+    }
+
+    public static String getQuestion(String[][] questions, int num){
+        return questions[num][0];
+    }
+
+    public static String getAnswer(String[][] questions, int num){
+        return questions[num][1];
     }
 
     /**
