@@ -14,7 +14,10 @@
    <left>
       <Pane prefHeight="704.0" prefWidth="375.0" BorderPane.alignment="CENTER">
          <children>
-            <Button fx:id="option1" layoutX="268.0" layoutY="316.0" mnemonicParsing="false" onAction="#option1Clicked" prefHeight="48.0" prefWidth="66.0" text="Option 1" />
+            <Button fx:id="option1" layoutX="263.0" layoutY="81.0" mnemonicParsing="false" onAction="#option1Clicked" prefHeight="48.0" prefWidth="71.0" text="Category 1">
+               <font>
+                  <Font size="11.0" />
+               </font></Button>
             <Label layoutX="72.0" layoutY="48.0" prefHeight="25.0" prefWidth="63.0" text="Player 1">
                <font>
                   <Font name="System Bold" size="15.0" />
@@ -48,6 +51,31 @@
             <CheckBox layoutX="135.0" layoutY="331.0" mnemonicParsing="false" text="Check to play" />
             <CheckBox layoutX="135.0" layoutY="189.0" mnemonicParsing="false" text="Check to play" />
             <CheckBox layoutX="135.0" layoutY="491.0" mnemonicParsing="false" text="Check to play" />
+            <Button layoutX="263.0" layoutY="174.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="71.0" text="Category 2">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Button>
+            <Button layoutX="263.0" layoutY="270.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="71.0" text="Category 3">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Button>
+            <Button layoutX="263.0" layoutY="368.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="71.0" text="Category 4">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Button>
+            <Button layoutX="263.0" layoutY="467.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="71.0" text="Category 5">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Button>
+            <Button layoutX="263.0" layoutY="559.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="71.0" text="Category 6">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Button>
          </children>
       </Pane>
    </left>
