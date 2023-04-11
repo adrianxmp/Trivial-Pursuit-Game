@@ -32,6 +32,15 @@ public class HelloController {
     private CheckBox P1CheckBox;
 
     @FXML
+    private CheckBox P2CheckBox;
+
+    @FXML
+    private CheckBox P3CheckBox;
+
+    @FXML
+    private CheckBox P4CheckBox;
+
+    @FXML
     public BorderPane borderpane;
 
     @FXML
@@ -45,6 +54,24 @@ public class HelloController {
 
     @FXML
     public ProgressIndicator P1ProgressIndicator;
+
+    @FXML
+    private ProgressBar P2ProgressBar;
+
+    @FXML
+    private ProgressIndicator P2ProgressIndicator;
+
+    @FXML
+    private ProgressBar P3ProgressBar;
+
+    @FXML
+    private ProgressIndicator P3ProgressIndicator;
+
+    @FXML
+    private ProgressBar P4ProgressBar;
+
+    @FXML
+    private ProgressIndicator P4ProgressIndicator;
 
 
     @FXML
