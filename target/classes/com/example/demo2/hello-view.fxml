@@ -10,11 +10,11 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane fx:id="borderpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="704.0" prefWidth="1171.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo2.HelloController">
+<BorderPane fx:id="borderpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="704.0" prefWidth="1171.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo2.HelloController">
    <left>
       <Pane prefHeight="704.0" prefWidth="375.0" BorderPane.alignment="CENTER">
          <children>
-            <Button fx:id="option1" layoutX="263.0" layoutY="81.0" mnemonicParsing="false" onAction="#option1Clicked" prefHeight="48.0" prefWidth="71.0" text="Category 1">
+            <Button id="questionsBox" fx:id="option1" layoutX="245.0" layoutY="81.0" mnemonicParsing="false" onAction="#category1Btn" prefHeight="48.0" prefWidth="89.0" text="Authentication">
                <font>
                   <Font size="11.0" />
                </font></Button>
@@ -51,27 +51,27 @@
             <CheckBox layoutX="135.0" layoutY="331.0" mnemonicParsing="false" text="Check to play" />
             <CheckBox layoutX="135.0" layoutY="189.0" mnemonicParsing="false" text="Check to play" />
             <CheckBox layoutX="135.0" layoutY="491.0" mnemonicParsing="false" text="Check to play" />
-            <Button layoutX="263.0" layoutY="174.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="71.0" text="Category 2">
+            <Button layoutX="263.0" layoutY="174.0" mnemonicParsing="false" onAction="#category2Btn" prefHeight="48.0" prefWidth="71.0" text="Privacy">
                <font>
                   <Font size="11.0" />
                </font>
             </Button>
-            <Button layoutX="263.0" layoutY="270.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="71.0" text="Category 3">
+            <Button layoutX="244.0" layoutY="270.0" mnemonicParsing="false" onAction="#category3Btn" prefHeight="48.0" prefWidth="90.0" text="Confidentiality">
                <font>
                   <Font size="11.0" />
                </font>
             </Button>
-            <Button layoutX="263.0" layoutY="368.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="71.0" text="Category 4">
+            <Button layoutX="263.0" layoutY="368.0" mnemonicParsing="false" onAction="#category4Btn" prefHeight="48.0" prefWidth="71.0" text="Passwords">
                <font>
                   <Font size="11.0" />
                </font>
             </Button>
-            <Button layoutX="263.0" layoutY="467.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="71.0" text="Category 5">
+            <Button layoutX="263.0" layoutY="467.0" mnemonicParsing="false" onAction="#category5Btn" prefHeight="48.0" prefWidth="71.0" text="Networks">
                <font>
                   <Font size="11.0" />
                </font>
             </Button>
-            <Button layoutX="263.0" layoutY="559.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="71.0" text="Category 6">
+            <Button layoutX="263.0" layoutY="559.0" mnemonicParsing="false" onAction="#category6Btn" prefHeight="48.0" prefWidth="71.0" text="Security">
                <font>
                   <Font size="11.0" />
                </font>
@@ -86,12 +86,12 @@
             <Button layoutX="141.0" layoutY="469.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="28.0" text="C" />
             <Button layoutX="141.0" layoutY="418.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="28.0" text="B" />
             <Button fx:id="Abutton" layoutX="141.0" layoutY="360.0" mnemonicParsing="false" onAction="#AbuttonClicked" prefHeight="25.0" prefWidth="28.0" text="A" />
-            <Label layoutX="130.0" layoutY="103.0" prefHeight="116.0" prefWidth="414.0" text="QUESTION HERE:">
+            <Label id="questionsText" fx:id="questionBox" alignment="CENTER" layoutX="130.0" layoutY="103.0" prefHeight="120.0" prefWidth="637.0" text="QUESTION HERE:">
                <font>
                   <Font size="20.0" />
                </font>
             </Label>
-            <Label layoutX="201.0" layoutY="315.0" prefHeight="116.0" prefWidth="414.0" text="ANSWERS HERE">
+            <Label id="answersText" fx:id="answerBox" alignment="CENTER" layoutX="185.0" layoutY="359.0" prefHeight="194.0" prefWidth="460.0" text="ANSWERS HERE">
                <font>
                   <Font size="20.0" />
                </font>

@@ -63,29 +63,31 @@ class Main {
         }
     }
 
-    public static void playGame(String topic){
+    public static String playGame(String topic){
         String[][] myQuestions = questions.get(topic);
         String[][] myAnswers = answers.get(topic);
 
         // Get random question from array
         int qNum = random.nextInt(myQuestions.length);
-//        System.out.println(myQuestions[qNum][0]);
 
         System.out.println(getQuestion(myQuestions, qNum));
 
 //         Loop through each row
-        for (int i = 1; i < myAnswers[qNum].length;i++) {
-            // Loop through each element in the current row
-            System.out.println(myAnswers[qNum][i]);
+//        for (int i = 1; i < myAnswers[qNum].length;i++) {
+//            // Loop through each element in the current row
+//            System.out.println(myAnswers[qNum][i]);
+//
+//        }
+        String options = displayOptions(myAnswers, qNum);
+        System.out.println(options);
 
-        }
-        if(input("\nYour answer: (a/b/c/d) ").equals(getAnswer(myQuestions, qNum))){
-            System.out.println("You are correct!!");
-        } else {
-            System.out.println("!!!!!!!!!!!! ERRRRRR WRONG !!!!!!!!!!!!! :(((((");
-        }
+//        if(input("\nYour answer: (a/b/c/d) ").equals(getAnswer(myQuestions, qNum))){
+//            System.out.println("You are correct!!");
+//        } else {
+//            System.out.println("!!!!!!!!!!!! ERRRRRR WRONG !!!!!!!!!!!!! :(((((");
+//        }
 
-        System.out.println();
+        return getAnswer(myQuestions, qNum);
 
     }
 
@@ -95,6 +97,15 @@ class Main {
 
     public static String getAnswer(String[][] questions, int num){
         return questions[num][1];
+    }
+
+    public static String displayOptions(String[][] myAnswers, int quesNumber){
+        StringBuilder options = new StringBuilder();
+        for (int i = 1; i < myAnswers[quesNumber].length;i++) {
+            // Loop through each element in the current row
+            options.append(myAnswers[quesNumber][i]).append("\n");
+        }
+        return options.toString();
     }
 
     /**
