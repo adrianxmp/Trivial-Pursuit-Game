@@ -13,6 +13,18 @@ import static com.example.demo2.Main.random;
 public class HelloController {
 
     @FXML
+    private RadioButton Abutton;
+
+    @FXML
+    private RadioButton Bbutton;
+
+    @FXML
+    private RadioButton Cbutton;
+
+    @FXML
+    private RadioButton Dbutton;
+
+    @FXML
     private Label statusLabel;
 
     @FXML
@@ -24,14 +36,6 @@ public class HelloController {
     @FXML
     public Button option1;
 
-    @FXML
-    private Button Abutton;
-
-    @FXML
-    public ProgressBar P1ProgressBar;
-
-    @FXML
-    public ProgressIndicator P1ProgressIndicator;
 
     private String myAnswer;
     private String[][] options;
@@ -43,43 +47,6 @@ public class HelloController {
     @FXML
     private Label questionBox = new Label();
 
-
-    @FXML
-    void AbuttonClicked(ActionEvent event) {
-        if (P1CheckBox.isSelected()){
-            progress(P1ProgressIndicator);
-            progress(P1ProgressBar);
-        }
-        P1CheckBox.setSelected(false);
-    }
-
-    @FXML
-    void BbuttonClicked(ActionEvent event) {
-
-    }
-
-    @FXML
-    void CbuttonClicked(ActionEvent event) {
-
-    }
-
-    @FXML
-    void DbuttonClicked(ActionEvent event) {
-
-    }
-
-    public void progress(ProgressIndicator p){
-        double value = p.getProgress();
-        if (value < 0){
-            value = 0.1;
-        }else {
-            value = value + 0.17;
-            if (value >= 1.0){
-                value = 1.0;
-            }
-        }
-        p.setProgress(value);
-    }
 
     @FXML
     void category1Btn(ActionEvent event) {
