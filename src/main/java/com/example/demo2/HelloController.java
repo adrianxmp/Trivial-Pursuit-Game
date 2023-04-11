@@ -11,6 +11,10 @@ import org.jetbrains.annotations.NotNull;
 import static com.example.demo2.Main.random;
 
 public class HelloController {
+
+    @FXML
+    private Label statusLabel;
+
     @FXML
     private CheckBox P1CheckBox;
 
@@ -173,6 +177,8 @@ public class HelloController {
     }
 
     void displayQuestionsAnswers(int questionNumber){
+        questionBox.setWrapText(true);
+        answerBox.setWrapText(true);
         questionBox.setText(questions[questionNumber][0]);
         answerBox.setText(Main.displayOptions(options, questionNumber));
     }
