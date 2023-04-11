@@ -86,12 +86,27 @@
             <Button layoutX="141.0" layoutY="469.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="28.0" text="C" />
             <Button layoutX="141.0" layoutY="418.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="28.0" text="B" />
             <Button fx:id="Abutton" layoutX="141.0" layoutY="360.0" mnemonicParsing="false" onAction="#AbuttonClicked" prefHeight="25.0" prefWidth="28.0" text="A" />
-            <Label layoutX="130.0" layoutY="103.0" prefHeight="116.0" prefWidth="414.0" text="QUESTION HERE:">
+            <Label fx:id="questionTextField" layoutX="130.0" layoutY="103.0" prefHeight="116.0" prefWidth="414.0" text="QUESTION HERE:">
                <font>
                   <Font size="20.0" />
                </font>
             </Label>
-            <Label layoutX="201.0" layoutY="315.0" prefHeight="116.0" prefWidth="414.0" text="ANSWERS HERE">
+            <Label fx:id="AtextField" layoutX="187.0" layoutY="345.0" prefHeight="55.0" prefWidth="571.0" text="ANSWERS HERE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="BtextField" layoutX="187.0" layoutY="403.0" prefHeight="55.0" prefWidth="571.0" text="ANSWERS HERE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="CtextField" layoutX="187.0" layoutY="454.0" prefHeight="55.0" prefWidth="571.0" text="ANSWERS HERE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="DtextField" layoutX="187.0" layoutY="510.0" prefHeight="55.0" prefWidth="571.0" text="ANSWERS HERE">
                <font>
                   <Font size="20.0" />
                </font>

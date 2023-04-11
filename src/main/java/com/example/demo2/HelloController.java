@@ -12,6 +12,22 @@ import java.io.IOException;
 import java.util.Objects;
 
 public class HelloController {
+
+    @FXML
+    private Label questionTextField;
+
+    @FXML
+    private Label AtextField;
+
+    @FXML
+    private Label BtextField;
+
+    @FXML
+    private Label CtextField;
+
+    @FXML
+    private Label DtextField;
+
     @FXML
     private CheckBox P1CheckBox;
 
