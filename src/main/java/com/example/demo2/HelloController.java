@@ -57,4 +57,34 @@ public class HelloController {
         }
         p.setProgress(value);
     }
+
+    @FXML
+    void category1Btn(ActionEvent event) {
+
+    }
+
+    @FXML
+    void category2Btn(ActionEvent event) {
+
+    }
+
+    @FXML
+    void category3Btn(ActionEvent event) {
+
+    }
+
+    @FXML
+    void category4Btn(ActionEvent event) {
+
+    }
+
+    @FXML
+    void category5Btn(ActionEvent event) {
+
+    }
+
+    @FXML
+    void category6Btn(ActionEvent event) {
+
+    }
 }
