@@ -38,7 +38,6 @@ class Main {
 
                 String option = input(
                         """
-                                Choose your topic:
                                 1. Authentication
                                 2. Privacy
                                 3. Confidentiality
@@ -75,10 +74,10 @@ class Main {
         System.out.println(getQuestion(myQuestions, qNum));
 
 //         Loop through each row
-        for (int i = 1; i < myAnswers.length;i++) {
+        for (int i = 1; i < myAnswers[qNum].length;i++) {
             // Loop through each element in the current row
-
             System.out.println(myAnswers[qNum][i]);
+
         }
         if(input("\nYour answer: (a/b/c/d) ").equals(getAnswer(myQuestions, qNum))){
             System.out.println("You are correct!!");
