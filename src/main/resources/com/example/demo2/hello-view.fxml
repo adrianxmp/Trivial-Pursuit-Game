@@ -82,9 +82,9 @@
    <center>
       <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: grey;" BorderPane.alignment="CENTER">
          <children>
-            <Button layoutX="141.0" layoutY="525.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="28.0" text="D" />
-            <Button layoutX="141.0" layoutY="469.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="28.0" text="C" />
-            <Button layoutX="141.0" layoutY="418.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="28.0" text="B" />
+            <Button fx:id="Dbutton" layoutX="141.0" layoutY="525.0" mnemonicParsing="false" onAction="#DbuttonClicked" prefHeight="25.0" prefWidth="28.0" text="D" />
+            <Button fx:id="Cbutton" layoutX="141.0" layoutY="469.0" mnemonicParsing="false" onAction="#CbuttonClicked" prefHeight="25.0" prefWidth="28.0" text="C" />
+            <Button fx:id="Bbutton" layoutX="141.0" layoutY="418.0" mnemonicParsing="false" onAction="#BbuttonClicked" prefHeight="25.0" prefWidth="28.0" text="B" />
             <Button fx:id="Abutton" layoutX="141.0" layoutY="360.0" mnemonicParsing="false" onAction="#AbuttonClicked" prefHeight="25.0" prefWidth="28.0" text="A" />
             <Label fx:id="questionTextField" layoutX="130.0" layoutY="103.0" prefHeight="116.0" prefWidth="414.0" text="QUESTION HERE:">
                <font>

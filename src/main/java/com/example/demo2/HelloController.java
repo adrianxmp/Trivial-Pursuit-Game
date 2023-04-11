@@ -50,6 +50,15 @@ public class HelloController {
     private Button Abutton;
 
     @FXML
+    private Button Bbutton;
+
+    @FXML
+    private Button Cbutton;
+
+    @FXML
+    private Button Dbutton;
+
+    @FXML
     public ProgressBar P1ProgressBar;
 
     @FXML
@@ -86,6 +95,21 @@ public class HelloController {
             progress(P1ProgressBar);
         }
         P1CheckBox.setSelected(false);
+    }
+
+    @FXML
+    void BbuttonClicked(ActionEvent event) {
+
+    }
+
+    @FXML
+    void CbuttonClicked(ActionEvent event) {
+
+    }
+
+    @FXML
+    void DbuttonClicked(ActionEvent event) {
+
     }
 
     public void progress(ProgressIndicator p){
