@@ -30,48 +30,48 @@
             </Label>
             <ProgressIndicator fx:id="P1ProgressIndicator" layoutX="84.0" layoutY="73.0" progress="0.0" />
             <ProgressBar fx:id="P1ProgressBar" layoutX="32.0" layoutY="113.0" prefHeight="31.0" prefWidth="137.0" progress="0.0" />
-            <ProgressIndicator layoutX="84.0" layoutY="210.0" progress="0.0" />
-            <ProgressBar layoutX="29.0" layoutY="254.0" prefHeight="31.0" prefWidth="137.0" progress="0.0" />
-            <ProgressBar layoutX="29.0" layoutY="392.0" prefHeight="31.0" prefWidth="137.0" progress="0.0" />
+            <ProgressIndicator fx:id="P2ProgressIndicator" layoutX="84.0" layoutY="210.0" progress="0.0" />
+            <ProgressBar fx:id="P2ProgressBar" layoutX="29.0" layoutY="254.0" prefHeight="31.0" prefWidth="137.0" progress="0.0" />
+            <ProgressBar fx:id="P3ProgressBar" layoutX="29.0" layoutY="392.0" prefHeight="31.0" prefWidth="137.0" progress="0.0" />
             <Label layoutX="69.0" layoutY="327.0" prefHeight="25.0" prefWidth="63.0" text="Player 3">
                <font>
                   <Font name="System Bold" size="15.0" />
                </font>
             </Label>
-            <ProgressIndicator layoutX="84.0" layoutY="352.0" progress="0.0" />
-            <ProgressIndicator layoutX="84.0" layoutY="512.0" progress="0.0" />
+            <ProgressIndicator fx:id="P3ProgressIndicator" layoutX="84.0" layoutY="352.0" progress="0.0" />
+            <ProgressIndicator fx:id="P4ProgressIndicator" layoutX="84.0" layoutY="512.0" progress="0.0" />
             <Label layoutX="69.0" layoutY="487.0" prefHeight="25.0" prefWidth="63.0" text="Player 4">
                <font>
                   <Font name="System Bold" size="15.0" />
                </font>
             </Label>
-            <ProgressBar layoutX="29.0" layoutY="552.0" prefHeight="31.0" prefWidth="137.0" progress="0.0" />
+            <ProgressBar fx:id="P4ProgressBar" layoutX="29.0" layoutY="552.0" prefHeight="31.0" prefWidth="137.0" progress="0.0" />
             <Separator layoutX="351.0" layoutY="5.0" orientation="VERTICAL" prefHeight="686.0" prefWidth="20.0" />
             <CheckBox fx:id="P1CheckBox" layoutX="135.0" layoutY="52.0" mnemonicParsing="false" text="Check to play" />
-            <CheckBox layoutX="135.0" layoutY="331.0" mnemonicParsing="false" text="Check to play" />
-            <CheckBox layoutX="135.0" layoutY="189.0" mnemonicParsing="false" text="Check to play" />
-            <CheckBox layoutX="135.0" layoutY="491.0" mnemonicParsing="false" text="Check to play" />
-            <Button layoutX="263.0" layoutY="174.0" mnemonicParsing="false" onAction="#category2Btn" prefHeight="48.0" prefWidth="71.0" text="Privacy">
+            <CheckBox fx:id="P3CheckBox" layoutX="135.0" layoutY="331.0" mnemonicParsing="false" text="Check to play" />
+            <CheckBox fx:id="P2CheckBox" layoutX="135.0" layoutY="189.0" mnemonicParsing="false" text="Check to play" />
+            <CheckBox fx:id="P4CheckBox" layoutX="135.0" layoutY="491.0" mnemonicParsing="false" text="Check to play" />
+            <Button layoutX="263.0" layoutY="174.0" mnemonicParsing="false" onAction="#category2Btn" prefHeight="48.0" prefWidth="71.0" text="Category 2">
                <font>
                   <Font size="11.0" />
                </font>
             </Button>
-            <Button layoutX="244.0" layoutY="270.0" mnemonicParsing="false" onAction="#category3Btn" prefHeight="48.0" prefWidth="90.0" text="Confidentiality">
+            <Button layoutX="263.0" layoutY="270.0" mnemonicParsing="false" onAction="#category3Btn" prefHeight="48.0" prefWidth="71.0" text="Category 3">
                <font>
                   <Font size="11.0" />
                </font>
             </Button>
-            <Button layoutX="263.0" layoutY="368.0" mnemonicParsing="false" onAction="#category4Btn" prefHeight="48.0" prefWidth="71.0" text="Passwords">
+            <Button layoutX="263.0" layoutY="368.0" mnemonicParsing="false" onAction="#category4Btn" prefHeight="48.0" prefWidth="71.0" text="Category 4">
                <font>
                   <Font size="11.0" />
                </font>
             </Button>
-            <Button layoutX="263.0" layoutY="467.0" mnemonicParsing="false" onAction="#category5Btn" prefHeight="48.0" prefWidth="71.0" text="Networks">
+            <Button layoutX="263.0" layoutY="467.0" mnemonicParsing="false" onAction="#category5Btn" prefHeight="48.0" prefWidth="71.0" text="Category 5">
                <font>
                   <Font size="11.0" />
                </font>
             </Button>
-            <Button layoutX="263.0" layoutY="559.0" mnemonicParsing="false" onAction="#category6Btn" prefHeight="48.0" prefWidth="71.0" text="Security">
+            <Button layoutX="263.0" layoutY="559.0" mnemonicParsing="false" onAction="#category6Btn" prefHeight="48.0" prefWidth="71.0" text="Category 6">
                <font>
                   <Font size="11.0" />
                </font>
@@ -82,9 +82,9 @@
    <center>
       <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: grey;" BorderPane.alignment="CENTER">
          <children>
-            <Button layoutX="141.0" layoutY="525.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="28.0" text="D" />
-            <Button layoutX="141.0" layoutY="469.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="28.0" text="C" />
-            <Button layoutX="141.0" layoutY="418.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="28.0" text="B" />
+            <Button fx:id="Dbutton" layoutX="141.0" layoutY="525.0" mnemonicParsing="false" onAction="#DbuttonClicked" prefHeight="25.0" prefWidth="28.0" text="D" />
+            <Button fx:id="Cbutton" layoutX="141.0" layoutY="469.0" mnemonicParsing="false" onAction="#CbuttonClicked" prefHeight="25.0" prefWidth="28.0" text="C" />
+            <Button fx:id="Bbutton" layoutX="141.0" layoutY="418.0" mnemonicParsing="false" onAction="#BbuttonClicked" prefHeight="25.0" prefWidth="28.0" text="B" />
             <Button fx:id="Abutton" layoutX="141.0" layoutY="360.0" mnemonicParsing="false" onAction="#AbuttonClicked" prefHeight="25.0" prefWidth="28.0" text="A" />
             <Label id="questionsText" fx:id="questionBox" alignment="CENTER" layoutX="130.0" layoutY="103.0" prefHeight="120.0" prefWidth="637.0" text="QUESTION HERE:">
                <font>

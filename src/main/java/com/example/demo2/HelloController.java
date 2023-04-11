@@ -2,8 +2,11 @@ package com.example.demo2;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.scene.control.*;
+import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
+import org.jetbrains.annotations.NotNull;
 
 import static com.example.demo2.Main.random;
 
@@ -48,6 +51,21 @@ public class HelloController {
             progress(P1ProgressBar);
         }
         P1CheckBox.setSelected(false);
+    }
+
+    @FXML
+    void BbuttonClicked(ActionEvent event) {
+
+    }
+
+    @FXML
+    void CbuttonClicked(ActionEvent event) {
+
+    }
+
+    @FXML
+    void DbuttonClicked(ActionEvent event) {
+
     }
 
     public void progress(ProgressIndicator p){
