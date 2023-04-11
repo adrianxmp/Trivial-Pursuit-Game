@@ -43,10 +43,6 @@ public class HelloController {
     @FXML
     private Label questionBox = new Label();
 
-    @FXML
-    void option1Clicked(ActionEvent event) {
-        P1CheckBox.setSelected(false);
-    }
 
     @FXML
     void AbuttonClicked(ActionEvent event) {
@@ -91,13 +87,7 @@ public class HelloController {
         options = Main.answers.get("Authentication");
         questions = Main.questions.get("Authentication");
         int qNum = random.nextInt(questions.length);
-
-//        for (int i = 1; i < options[qNum].length;i++) {
-//            // Loop through each element in the current row
-//            System.out.println(options[qNum][i]);
-//
-//        }
-        myAnswer = Main.playGame("Authentication");
+        myAnswer = Main.getAnswer(questions, qNum);
         displayQuestionsAnswers(qNum);
     }
 
@@ -106,13 +96,7 @@ public class HelloController {
         options = Main.answers.get("Privacy");
         questions = Main.questions.get("Privacy");
         int qNum = random.nextInt(questions.length);
-
-//        for (int i = 1; i < options[qNum].length;i++) {
-//            // Loop through each element in the current row
-//            System.out.println(options[qNum][i]);
-//
-//        }
-        myAnswer = Main.playGame("Privacy");
+        myAnswer = Main.getAnswer(questions, qNum);
         displayQuestionsAnswers(qNum);
     }
 
@@ -121,13 +105,7 @@ public class HelloController {
         options = Main.answers.get("Confidentiality");
         questions = Main.questions.get("Confidentiality");
         int qNum = random.nextInt(questions.length);
-
-//        for (int i = 1; i < options[qNum].length;i++) {
-//            // Loop through each element in the current row
-//            System.out.println(options[qNum][i]);
-//
-//        }
-        myAnswer = Main.playGame("Confidentiality");
+        myAnswer = Main.getAnswer(questions, qNum);;
         displayQuestionsAnswers(qNum);
     }
 
@@ -136,13 +114,7 @@ public class HelloController {
         options = Main.answers.get("Passwords");
         questions = Main.questions.get("Passwords");
         int qNum = random.nextInt(questions.length);
-
-//        for (int i = 1; i < options[qNum].length;i++) {
-//            // Loop through each element in the current row
-//            System.out.println(options[qNum][i]);
-//
-//        }
-        myAnswer = Main.playGame("Passwords");
+        myAnswer = Main.getAnswer(questions, qNum);
         displayQuestionsAnswers(qNum);
     }
 
@@ -151,13 +123,7 @@ public class HelloController {
         options = Main.answers.get("Network");
         questions = Main.questions.get("Network");
         int qNum = random.nextInt(questions.length);
-
-//        for (int i = 1; i < options[qNum].length;i++) {
-//            // Loop through each element in the current row
-//            System.out.println(options[qNum][i]);
-//
-//        }
-        myAnswer = Main.playGame("Network");
+        myAnswer = Main.getAnswer(questions, qNum);
         displayQuestionsAnswers(qNum);
     }
 
@@ -166,13 +132,7 @@ public class HelloController {
         options = Main.answers.get("Security");
         questions = Main.questions.get("Security");
         int qNum = random.nextInt(questions.length);
-
-//        for (int i = 1; i < options[qNum].length;i++) {
-//            // Loop through each element in the current row
-//            System.out.println(options[qNum][i]);
-//
-//        }
-        myAnswer = Main.playGame("Security");
+        myAnswer = Main.getAnswer(questions, qNum);
         displayQuestionsAnswers(qNum);
     }
 

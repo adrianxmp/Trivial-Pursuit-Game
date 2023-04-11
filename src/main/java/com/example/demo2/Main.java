@@ -78,8 +78,8 @@ class Main {
 //            System.out.println(myAnswers[qNum][i]);
 //
 //        }
-        String options = displayOptions(myAnswers, qNum);
-        System.out.println(options);
+        //String options = displayOptions(myAnswers, qNum);
+        //System.out.println(options);
 
 //        if(input("\nYour answer: (a/b/c/d) ").equals(getAnswer(myQuestions, qNum))){
 //            System.out.println("You are correct!!");
