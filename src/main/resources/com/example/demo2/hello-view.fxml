@@ -57,14 +57,14 @@
                   <Font name="System Bold" size="20.0" />
                </font>
             </Label>
-            <Label id="answersText" fx:id="answerBox" layoutX="144.0" layoutY="352.0" prefHeight="262.0" prefWidth="613.0" text="ANSWERS HERE">
+            <Label id="answersText" fx:id="answerBox" layoutX="144.0" layoutY="352.0" lineSpacing="28.0" prefHeight="262.0" prefWidth="613.0" text="ANSWERS HERE" wrapText="true">
                <font>
                   <Font name="System Bold" size="18.0" />
                </font>
             </Label>
-            <Label fx:id="statusLabel" layoutX="361.0" layoutY="660.0" prefHeight="39.0" prefWidth="429.0" text="Status Label">
+            <Label fx:id="statusLabel" layoutX="195.0" layoutY="631.0" prefHeight="66.0" prefWidth="587.0" text="Status">
                <font>
-                  <Font name="System Bold" size="14.0" />
+                  <Font name="System Bold" size="18.0" />
                </font>
             </Label>
             <Button fx:id="Abutton" layoutX="78.0" layoutY="373.0" mnemonicParsing="false" onAction="#Aclick" text="A" />
