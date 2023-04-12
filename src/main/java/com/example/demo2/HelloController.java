@@ -109,9 +109,4 @@ public class HelloController {
         questionBox.setText(questions[questionNumber][0]);
         answerBox.setText(Main.displayOptions(options, questionNumber));
     }
-
-    @FXML
-    void submitButton(ActionEvent event) {
-
-    }
 }
