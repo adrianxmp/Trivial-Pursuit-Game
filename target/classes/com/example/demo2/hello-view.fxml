@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane fx:id="borderpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="704.0" prefWidth="1171.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo2.HelloController">
+<BorderPane fx:id="borderpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="704.0" prefWidth="1171.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo2.HelloController">
    <left>
       <Pane prefHeight="704.0" prefWidth="375.0" BorderPane.alignment="CENTER">
          <children>
@@ -52,25 +52,25 @@
    <center>
       <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: grey;" BorderPane.alignment="CENTER">
          <children>
-            <Label id="questionsText" fx:id="questionBox" layoutX="78.0" layoutY="36.0" prefHeight="301.0" prefWidth="675.0" text="Welcome! Please select a category to begin" textAlignment="CENTER">
+            <Label id="questionsText" fx:id="questionBox" layoutX="78.0" layoutY="36.0" prefHeight="301.0" prefWidth="675.0" text="QUESTION HERE:">
                <font>
                   <Font name="System Bold" size="20.0" />
                </font>
             </Label>
-            <Label id="answersText" fx:id="answerBox" layoutX="144.0" layoutY="352.0" prefHeight="262.0" prefWidth="613.0">
+            <Label id="answersText" fx:id="answerBox" layoutX="144.0" layoutY="352.0" prefHeight="262.0" prefWidth="613.0" text="ANSWERS HERE">
                <font>
                   <Font name="System Bold" size="18.0" />
                </font>
             </Label>
-            <Label fx:id="statusLabel" layoutX="361.0" layoutY="660.0" prefHeight="39.0" prefWidth="429.0">
+            <Label fx:id="statusLabel" layoutX="361.0" layoutY="660.0" prefHeight="39.0" prefWidth="429.0" text="Status Label">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font>
             </Label>
-            <Button id="Abutton" fx:id="Abutton" layoutX="78.0" layoutY="373.0" mnemonicParsing="false" onAction="#Aclick" text="A" />
-            <Button id="Bbutton" fx:id="Bbutton" layoutX="78.0" layoutY="435.0" mnemonicParsing="false" onAction="#Bclick" text="B" />
-            <Button id="CButton" fx:id="Cbutton" layoutX="78.0" layoutY="500.0" mnemonicParsing="false" onAction="#Cclick" text="C" />
-            <Button id="Dbutton" fx:id="Dbutton" layoutX="78.0" layoutY="569.0" mnemonicParsing="false" onAction="#Dclick" text="D" />
+            <Button fx:id="Abutton" layoutX="78.0" layoutY="373.0" mnemonicParsing="false" onAction="#Aclick" text="A" />
+            <Button fx:id="Bbutton" layoutX="78.0" layoutY="435.0" mnemonicParsing="false" onAction="#Bclick" text="B" />
+            <Button fx:id="Cbutton" layoutX="78.0" layoutY="500.0" mnemonicParsing="false" onAction="#Cclick" text="C" />
+            <Button fx:id="Dbutton" layoutX="78.0" layoutY="569.0" mnemonicParsing="false" onAction="#Dclick" text="D" />
          </children>
       </Pane>
    </center>

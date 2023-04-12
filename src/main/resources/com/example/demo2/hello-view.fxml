@@ -67,10 +67,10 @@
                   <Font name="System Bold" size="14.0" />
                </font>
             </Label>
-            <Button fx:id="Abutton" layoutX="78.0" layoutY="373.0" mnemonicParsing="false" text="A" />
-            <Button fx:id="Bbutton" layoutX="78.0" layoutY="435.0" mnemonicParsing="false" text="B" />
-            <Button fx:id="Cbutton" layoutX="78.0" layoutY="500.0" mnemonicParsing="false" text="C" />
-            <Button fx:id="Dbutton" layoutX="78.0" layoutY="569.0" mnemonicParsing="false" text="D" />
+            <Button fx:id="Abutton" layoutX="78.0" layoutY="373.0" mnemonicParsing="false" onAction="#Aclick" text="A" />
+            <Button fx:id="Bbutton" layoutX="78.0" layoutY="435.0" mnemonicParsing="false" onAction="#Bclick" text="B" />
+            <Button fx:id="Cbutton" layoutX="78.0" layoutY="500.0" mnemonicParsing="false" onAction="#Cclick" text="C" />
+            <Button fx:id="Dbutton" layoutX="78.0" layoutY="569.0" mnemonicParsing="false" onAction="#Dclick" text="D" />
          </children>
       </Pane>
    </center>
