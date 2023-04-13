@@ -7,7 +7,6 @@ import javafx.scene.control.*;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.paint.Color;
-import org.jetbrains.annotations.NotNull;
 
 import static com.example.demo2.Main.random;
 
